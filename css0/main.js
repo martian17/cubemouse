@@ -3,7 +3,7 @@ var matMul4 = function(a,b){
     for(var i = 0; i < 4; i++){//lateral
         for(var j = 0; j < 4; j++){//vertical
             for(var k = 0; k < 4; k++){//depth addition
-                result[i*4+j] += a[i*4+k]*a[k*4+j];
+                result[i*4+j] += a[i*4+k]*b[k*4+j];
             }
         }
     }
@@ -58,8 +58,8 @@ document.body.addEventListener("mousemove",function(e){
     var dx = x - x0;
     var dy = y - y0;
     //remember small angle approximation? sin(x) x>0 := x
-    var ay = dx/600//destination angle for the y axis
-    var ax = dy/600//destination angle for the x axis
+    var ay = -dx/100//destination angle for the y axis
+    var ax = dy/100//destination angle for the x axis
     var ymat = genYmat(ay);
     var xmat = genXmat(ax);
     resultMatrix = matMul4(matMul4(resultMatrix,ymat),xmat);
