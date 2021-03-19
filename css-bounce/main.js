@@ -98,6 +98,8 @@ var height = window.innerHeight;
 
 var start = 0;
 var animate = function(t){
+    width = window.innerWidth;
+    height = window.innerHeight;
     if(start === 0)start = t;
     var dt = (t - start)/1000;
     start = t;
@@ -130,12 +132,14 @@ var animate = function(t){
     //bounce and stuff
     if(gx < 100){
         gvx += 50*dt*(100-gx);
-    }else if(gx > width-100-bw){
+    }
+    if(gx > width-100-bw){
         gvx -= 50*dt*(gx-(width-100-bw));
     }
     if(gy < 100){
         gvy += 50*dt*(100-gy);
-    }else if(gy > height-100-bh){
+    }
+    if(gy > height-100-bh){
         gvy -= 50*dt*(gy-(height-100-bh));
     }
     gvx = gvx-gvx*dt*0.8;
