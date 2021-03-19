@@ -1,5 +1,4 @@
-It's like a floating bearing ball but it's cubic --martian17
-
+It's like a floating bearing ball but it's cubic --martian17  
 The best fidget spinner I've ever made --martian17
 
 
