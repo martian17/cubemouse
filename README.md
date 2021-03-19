@@ -3,3 +3,5 @@ The best fidget spinner I've ever made --martian17
 
 
 demo: https://codepen.io/MartianLord/full/oNYKjRv
+
+Thank you GGanon for the idea!
