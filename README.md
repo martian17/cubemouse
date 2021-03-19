@@ -1,3 +1,4 @@
 It's like a floating bearing ball but it's cubic --martian17
+The best fidget spinner I've ever made --martian17
 
-Personally the infinite friction one is the most satisfying
+demo: https://codepen.io/MartianLord/full/oNYKjRv
