@@ -42,8 +42,8 @@ var resultMatrix = [
     0,0,0,1
 ];
 
-var vx = 0;
-var vy = 0;
+var vx = 50;
+var vy = -10;
 var x0 = 0;
 var y0 = 0;
 var t0 = Date.now();
@@ -90,7 +90,7 @@ document.body.addEventListener("mouseup",function(e){
 var gx = 100;
 var gy = 100;
 var gvx = 200;
-var gvy = 200;
+var gvy = 100;
 var bw = 200;
 var bh = 200;
 var width = window.innerWidth;

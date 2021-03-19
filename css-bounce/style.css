@@ -2,6 +2,7 @@ body{
     margin:0px;
     min-width:100vw;
     min-height:100vh;
+    font-family:Arial;
 }
 
 .wrapper{
@@ -49,4 +50,26 @@ body{
 .bottom{
     transform: rotateX(-90deg) translateZ(100px);
     background-color: orange;
+}
+
+
+#msg{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background-color:#0008;
+    color:#fff;
+    /*text-align:center;*/
+    animation:fade 2s cubic-bezier(1,0,.62,1);
+    opacity:0;
+    display:grid;
+    place-items:center;
+    font-size:3em;
+}
+
+@keyframes fade {
+    from {opacity:1;}
+    to   {opacity:0;}
 }
